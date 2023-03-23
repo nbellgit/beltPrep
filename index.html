@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="nav">
+            <div class="flex-2 flex_center">
+                <h1>Steam</h1>
+                <div id="nav_links">
+                    <a href="#">Store</a>
+                    <a href="#">Community</a>
+                    <a href="#">About</a>
+                    <a href="#">Support</a>
+                </div>
+            </div>
+            <div class="flex-1 flex_center">
+                <button onclick="alert('This button is broken')">Install Steam</button>
+                <a href="#">Login</a>
+                <p>|</p>
+                <a href="#">Languages</a>
+            </div>
+        </div>
+        <div id="main">
+            <h2>Featured</h2>
+            <div class="featured_game" id="featured_game_1">
+                <img src="imgs/img.jpg" alt="Featured Image" class="featured_img flex-2" id="elden_ring">
+                <div class="flex-1">
+                    <h3>Elden Ring</h3>
+                    <div class="preview_imgs_container">
+                        <img src="imgs/img.jpg" alt="image 1" class="preview_img" onmouseover="change_featured_img(this, 'elden_ring')">
+                        <img src="imgs/img2.jpg" alt="image 2" class="preview_img" onmouseover="change_featured_img(this,'elden_ring')">
+                        <img src="imgs/img3.jpg" alt="image 3" class="preview_img" onmouseover="change_featured_img(this, 'elden_ring')">
+                        <img src="imgs/img4.jpg" alt="image 4" class="preview_img" onmouseover="change_featured_img(this, 'elden_ring')">
+                    </div>
+                    <button onclick="_remove('featured_game_1')">Buy This Game</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
